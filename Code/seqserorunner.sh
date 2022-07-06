@@ -16,5 +16,5 @@ mv $(ls -d */) /results/${dir%/}_SeqSeroResults_kmer
 cd ..
 done
 
-cp -r /results ./Results
+cp -r /results ./SeqSero2.results
 
