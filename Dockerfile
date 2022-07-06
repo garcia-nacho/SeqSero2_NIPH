@@ -42,14 +42,12 @@ RUN apt-get update && apt-get install -y \
  liblzma-dev \
  build-essential \
  libncurses5-dev \
- gcc-9-base \
-        libopenblas0-pthread \
-		littler \
-        r-cran-littler \
-		r-base \
-		r-base-dev \
-        r-base-core\
-		r-recommended \
+ littler \
+ r-cran-littler \
+ r-base \
+ r-base-dev \
+ r-base-core\
+ r-recommended \
 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r \
 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r \
 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r \
