@@ -18,3 +18,6 @@ done
 
 cp -r /results ./SeqSero2.results
 
+cd Seqser2.results
+Rscript /Code/postanalysis.R
+
