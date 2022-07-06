@@ -4,6 +4,8 @@ FROM ubuntu:bionic
 # Fixed for FHI
 
 ARG SEQSERO2_VER="1.2.1"
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Moscow
 
 # Metadata
 LABEL base.image="ubuntu:bionic"
@@ -93,4 +95,4 @@ COPY Code/ /Code/
 RUN chmod -R +rwx /Code/* 
 
 WORKDIR /data
-CMD ["sh", "-c", "/home/docker/Code/seqserorunner"]
+CMD ["sh", "-c", "/Code/seqserorunner.sh"]
